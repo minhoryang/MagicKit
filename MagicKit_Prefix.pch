@@ -4,7 +4,7 @@
 
 #ifdef __OBJC__
 
-// #import <Cocoa/Cocoa.h> OS X and I don't care.
+// #import <Cocoa/Cocoa.h> OS X
 #import <Foundation/Foundation.h>
 
 #endif
