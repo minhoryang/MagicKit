@@ -23,9 +23,6 @@
  *  THE SOFTWARE.
  */
 
-#import <Foundation/Foundation.h>
-#import <MagicKit/MagicKit.h>
-
 @interface GEMagicResult : NSObject {
     NSString *mimeType;
     NSString *description;

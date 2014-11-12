@@ -23,9 +23,6 @@
  *  THE SOFTWARE.
  */
 
-#import <Foundation/Foundation.h>
-#import <MagicKit/MagicKit.h>
-
 @class GEMagicResult;
 
 @interface GEMagicKit : NSObject {

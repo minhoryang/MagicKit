@@ -23,6 +23,5 @@
  *  THE SOFTWARE.
  */
 
-#import <Foundation/Foundation.h>
-#import <MagicKit/GEMagicKit.h>
-#import <MagicKit/GEMagicResult.h>
+#import "GEMagicKit.h"
+#import "GEMagicResult.h"
