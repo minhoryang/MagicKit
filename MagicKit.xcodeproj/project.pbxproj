@@ -75,7 +75,6 @@
 		DDC92B6F12618E120012DE28 /* GEMagicKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC92B6E12618E120012DE28 /* GEMagicKit.m */; };
 		DDC92B7012618E120012DE28 /* GEMagicKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC92B6E12618E120012DE28 /* GEMagicKit.m */; };
 		DDC92C4212619DB10012DE28 /* MagicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* MagicKit.framework */; };
-		DDC92C5A12619EBC0012DE28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC92C5912619EBC0012DE28 /* main.m */; };
 		DDC92C5E1261A07F0012DE28 /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = DDC92C5D1261A07F0012DE28 /* LICENCE */; };
 /* End PBXBuildFile section */
 
@@ -151,7 +150,6 @@
 		DDC92A8912618B050012DE28 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DDC92B6E12618E120012DE28 /* GEMagicKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEMagicKit.m; sourceTree = "<group>"; };
 		DDC92C0512619C1E0012DE28 /* MagicKitTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MagicKitTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDC92C5912619EBC0012DE28 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MagicKitTest/main.m; sourceTree = SOURCE_ROOT; };
 		DDC92C5D1261A07F0012DE28 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
 		DDC92C6E1261A2640012DE28 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -320,7 +318,6 @@
 			isa = PBXGroup;
 			children = (
 				3DCAEFF4162D8C950036D9BF /* MagicKitTest-Prefix.pch */,
-				DDC92C5912619EBC0012DE28 /* main.m */,
 			);
 			name = "MagicKit Test";
 			sourceTree = "<group>";
@@ -461,7 +458,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDC92C5A12619EBC0012DE28 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
