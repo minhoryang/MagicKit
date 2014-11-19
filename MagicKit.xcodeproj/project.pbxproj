@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		071C0C471A1416E800392295 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071C0C461A1416E800392295 /* MobileCoreServices.framework */; };
-		07775EC81A14129F00A02B79 /* GEMagicResult.h in Headers */ = {isa = PBXBuildFile; fileRef = DD610A1D1271094B003CF804 /* GEMagicResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		075B60F91A1D3AB7009916DE /* GEMagicKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DDC929DE126187DA0012DE28 /* GEMagicKit.h */; };
+		075B60FA1A1D3AB7009916DE /* GEMagicResult.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DD610A1D1271094B003CF804 /* GEMagicResult.h */; };
+		075B60FB1A1D3ABE009916DE /* MagicKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DD610A6612710C90003CF804 /* MagicKit.h */; };
 		07EBE4091A141F72000060D1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071C0C461A1416E800392295 /* MobileCoreServices.framework */; };
 		07EBE40B1A14202A000060D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EBE40A1A14202A000060D1 /* Foundation.framework */; };
-		07EBE40E1A142471000060D1 /* MagicKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DD610A6612710C90003CF804 /* MagicKit.h */; };
 		3DCAEFDD162D893A0036D9BF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC92A8912618B050012DE28 /* libz.dylib */; };
 		3DCAF01C162D9C520036D9BF /* magic.mgc in Resources */ = {isa = PBXBuildFile; fileRef = 3DCAF01B162D9C520036D9BF /* magic.mgc */; };
 		5F4F51871551FFD300248063 /* GEMagicResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DD610A1E1271094B003CF804 /* GEMagicResult.m */; };
 		DD610A1F1271094B003CF804 /* GEMagicResult.h in Headers */ = {isa = PBXBuildFile; fileRef = DD610A1D1271094B003CF804 /* GEMagicResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD610A201271094B003CF804 /* GEMagicResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DD610A1E1271094B003CF804 /* GEMagicResult.m */; };
 		DD610A6712710C90003CF804 /* MagicKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DD610A6612710C90003CF804 /* MagicKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD610A6812710C90003CF804 /* MagicKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DD610A6612710C90003CF804 /* MagicKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDC9299A126187080012DE28 /* apprentice.c in Sources */ = {isa = PBXBuildFile; fileRef = DDC92978126187080012DE28 /* apprentice.c */; };
 		DDC9299B126187080012DE28 /* apptype.c in Sources */ = {isa = PBXBuildFile; fileRef = DDC92979126187080012DE28 /* apptype.c */; };
 		DDC9299C126187080012DE28 /* ascmagic.c in Sources */ = {isa = PBXBuildFile; fileRef = DDC9297A126187080012DE28 /* ascmagic.c */; };
@@ -71,7 +71,6 @@
 		DDC92B2E12618B3D0012DE28 /* vasprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = DDC92999126187080012DE28 /* vasprintf.c */; };
 		DDC92B2F12618B3D0012DE28 /* funcs.c in Sources */ = {isa = PBXBuildFile; fileRef = DDC92986126187080012DE28 /* funcs.c */; };
 		DDC92B3012618B3D0012DE28 /* fsmagic.c in Sources */ = {isa = PBXBuildFile; fileRef = DDC92985126187080012DE28 /* fsmagic.c */; };
-		DDC92B4B12618BEE0012DE28 /* GEMagicKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DDC929DE126187DA0012DE28 /* GEMagicKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDC92B6F12618E120012DE28 /* GEMagicKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC92B6E12618E120012DE28 /* GEMagicKit.m */; };
 		DDC92B7012618E120012DE28 /* GEMagicKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC92B6E12618E120012DE28 /* GEMagicKit.m */; };
 		DDC92C4212619DB10012DE28 /* MagicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* MagicKit.framework */; };
@@ -95,7 +94,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				07EBE40E1A142471000060D1 /* MagicKit.h in CopyFiles */,
+				075B60FB1A1D3ABE009916DE /* MagicKit.h in CopyFiles */,
+				075B60F91A1D3AB7009916DE /* GEMagicKit.h in CopyFiles */,
+				075B60FA1A1D3AB7009916DE /* GEMagicResult.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,16 +345,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDC92A8012618AE90012DE28 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD610A6812710C90003CF804 /* MagicKit.h in Headers */,
-				DDC92B4B12618BEE0012DE28 /* GEMagicKit.h in Headers */,
-				07775EC81A14129F00A02B79 /* GEMagicResult.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -400,7 +391,6 @@
 				DDC92A8112618AE90012DE28 /* Sources */,
 				DDC92A8212618AE90012DE28 /* Frameworks */,
 				07EBE40D1A142468000060D1 /* CopyFiles */,
-				DDC92A8012618AE90012DE28 /* Headers */,
 			);
 			buildRules = (
 			);
