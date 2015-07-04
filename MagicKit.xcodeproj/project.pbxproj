@@ -147,7 +147,7 @@
 		DDC929BC1261872F0012DE28 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		DDC929C0126187420012DE28 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		DDC929DE126187DA0012DE28 /* GEMagicKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEMagicKit.h; sourceTree = "<group>"; };
-		DDC92A8412618AE90012DE28 /* libMagicKit-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libMagicKit-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC92A8412618AE90012DE28 /* libMagicKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMagicKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC92A8912618B050012DE28 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DDC92B6E12618E120012DE28 /* GEMagicKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEMagicKit.m; sourceTree = "<group>"; };
 		DDC92C0512619C1E0012DE28 /* MagicKitTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MagicKitTest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,7 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				8DC2EF5B0486A6940098B216 /* MagicKit.framework */,
-				DDC92A8412618AE90012DE28 /* libMagicKit-iOS.a */,
+				DDC92A8412618AE90012DE28 /* libMagicKit.a */,
 				DDC92C0512619C1E0012DE28 /* MagicKitTest */,
 			);
 			name = Products;
@@ -365,9 +365,9 @@
 			productReference = DDC92C0512619C1E0012DE28 /* MagicKitTest */;
 			productType = "com.apple.product-type.tool";
 		};
-		8DC2EF4F0486A6940098B216 /* MagicKit */ = {
+		8DC2EF4F0486A6940098B216 /* MagicKit-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "MagicKit" */;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "MagicKit-Mac" */;
 			buildPhases = (
 				8DC2EF540486A6940098B216 /* Sources */,
 				8DC2EF560486A6940098B216 /* Frameworks */,
@@ -378,15 +378,15 @@
 			);
 			dependencies = (
 			);
-			name = MagicKit;
+			name = "MagicKit-Mac";
 			productInstallPath = "$(HOME)/Library/Frameworks";
 			productName = MagicKit;
 			productReference = 8DC2EF5B0486A6940098B216 /* MagicKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DDC92A8312618AE90012DE28 /* MagicKit-iOS */ = {
+		DDC92A8312618AE90012DE28 /* MagicKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDC92A8D12618B050012DE28 /* Build configuration list for PBXNativeTarget "MagicKit-iOS" */;
+			buildConfigurationList = DDC92A8D12618B050012DE28 /* Build configuration list for PBXNativeTarget "MagicKit" */;
 			buildPhases = (
 				DDC92A8112618AE90012DE28 /* Sources */,
 				DDC92A8212618AE90012DE28 /* Frameworks */,
@@ -396,9 +396,9 @@
 			);
 			dependencies = (
 			);
-			name = "MagicKit-iOS";
+			name = MagicKit;
 			productName = "MagicKit-iOS";
-			productReference = DDC92A8412618AE90012DE28 /* libMagicKit-iOS.a */;
+			productReference = DDC92A8412618AE90012DE28 /* libMagicKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -424,8 +424,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8DC2EF4F0486A6940098B216 /* MagicKit */,
-				DDC92A8312618AE90012DE28 /* MagicKit-iOS */,
+				8DC2EF4F0486A6940098B216 /* MagicKit-Mac */,
+				DDC92A8312618AE90012DE28 /* MagicKit */,
 				3DCAEFE1162D8BDE0036D9BF /* MagicKitTest */,
 			);
 		};
@@ -515,7 +515,7 @@
 /* Begin PBXTargetDependency section */
 		3DCAEFF2162D8BF60036D9BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8DC2EF4F0486A6940098B216 /* MagicKit */;
+			target = 8DC2EF4F0486A6940098B216 /* MagicKit-Mac */;
 			targetProxy = DDC92C0E12619C430012DE28 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -646,10 +646,11 @@
 				);
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
-				PRODUCT_NAME = "MagicKit-iOS";
+				PRODUCT_NAME = MagicKit;
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -673,10 +674,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "HAVE_CONFIG_H=1";
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
-				PRODUCT_NAME = "MagicKit-iOS";
+				PRODUCT_NAME = MagicKit;
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -689,7 +691,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "MagicKit" */ = {
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "MagicKit-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB91AE08733DA50010E9CD /* Debug */,
@@ -716,7 +718,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDC92A8D12618B050012DE28 /* Build configuration list for PBXNativeTarget "MagicKit-iOS" */ = {
+		DDC92A8D12618B050012DE28 /* Build configuration list for PBXNativeTarget "MagicKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DDC92A8512618AE90012DE28 /* Debug */,

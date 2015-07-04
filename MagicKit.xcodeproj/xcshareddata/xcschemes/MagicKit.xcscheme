@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DDC92A8312618AE90012DE28"
                BuildableName = "libMagicKit-iOS.a"
-               BlueprintName = "MagicKit-iOS"
+               BlueprintName = "MagicKit"
                ReferencedContainer = "container:MagicKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDC92A8312618AE90012DE28"
             BuildableName = "libMagicKit-iOS.a"
-            BlueprintName = "MagicKit-iOS"
+            BlueprintName = "MagicKit"
             ReferencedContainer = "container:MagicKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -62,7 +62,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDC92A8312618AE90012DE28"
             BuildableName = "libMagicKit-iOS.a"
-            BlueprintName = "MagicKit-iOS"
+            BlueprintName = "MagicKit"
             ReferencedContainer = "container:MagicKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
